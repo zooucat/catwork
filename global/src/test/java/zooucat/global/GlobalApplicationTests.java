@@ -1,10 +1,10 @@
-package zooucat.catwork;
+package zooucat.global;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CatworkApplicationTests {
+class GlobalApplicationTests {
 
 	@Test
 	void contextLoads() {
