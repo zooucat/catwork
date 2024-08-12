@@ -4,22 +4,53 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.6"
 }
 
-group = "zooucat"
-version = "0.0.1-SNAPSHOT"
-
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(21)
+allprojects {
+	repositories {
+		mavenCentral()
 	}
 }
 
-repositories {
-	mavenCentral()
+subprojects {
+	apply {
+		plugin("java")
+		plugin("org.springframework.boot")
+		plugin("io.spring.dependency-management")
+	}
+
+	group = "zooucat"
+	version = "0.0.1-SNAPSHOT"
+	java.sourceCompatibility = JavaVersion.VERSION_21
+
+	dependencies {
+		implementation("org.springframework.boot:spring-boot-starter-web")
+		testImplementation("org.springframework.boot:spring-boot-starter-test")
+	}
+
+	tasks {
+		jar {
+			enabled = false
+		}
+		bootJar {
+			enabled = false
+		}
+		test {
+			enabled = false
+		}
+	}
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation(project(":global"))
+}
+
+tasks {
+	jar {
+		enabled = true
+		archiveClassifier.set("")
+	}
+	bootJar {
+		enabled  = false
+	}
 }
 
 tasks.withType<Test> {
