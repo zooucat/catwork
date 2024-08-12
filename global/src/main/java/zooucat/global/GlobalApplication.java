@@ -1,13 +1,13 @@
-package zooucat.catwork;
+package zooucat.global;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CatworkApplication {
+public class GlobalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CatworkApplication.class, args);
+		SpringApplication.run(GlobalApplication.class, args);
 	}
 
 }
