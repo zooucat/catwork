@@ -17,7 +17,7 @@ subprojects {
 		plugin("io.spring.dependency-management")
 	}
 
-	group = "zooucat"
+	group = "catwork"
 	version = "0.0.1-SNAPSHOT"
 	java.sourceCompatibility = JavaVersion.VERSION_21
 
