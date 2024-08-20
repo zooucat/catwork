@@ -65,7 +65,6 @@ subprojects {
 }
 
 dependencies {
-	implementation(project(":global"))
 }
 
 tasks {
