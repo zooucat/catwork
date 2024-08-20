@@ -1,3 +1,4 @@
 rootProject.name = "catwork"
 
-include("global")
+include("catwork-starters")
+include("catwork-autoconfigure")
