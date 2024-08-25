@@ -28,6 +28,7 @@ publishing {
 
 dependencies {
     api(project(":catwork-autoconfigure"))
+    api(project(":catwork-datasource"))
 }
 
 tasks.register("prepareKotlinBuildScriptModel"){

@@ -1,3 +1,7 @@
+plugins {
+    `java-library`
+}
+
 publishing {
     publications {
         create<MavenPublication>("github") {
@@ -24,6 +28,8 @@ publishing {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-autoconfigure:3.3.2")
+
+    api(project(":catwork-datasource"))
 }
 
 tasks.register("prepareKotlinBuildScriptModel"){
