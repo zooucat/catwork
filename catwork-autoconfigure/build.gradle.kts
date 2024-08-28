@@ -27,7 +27,7 @@ publishing {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-autoconfigure:3.3.2")
+    implementation(libs.spring.autoconfiguration)
 
     api(project(":catwork-datasource"))
 }
