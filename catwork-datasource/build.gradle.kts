@@ -22,5 +22,9 @@ publishing {
     }
 }
 
+dependencies {
+    implementation(libs.spring.jpa)
+}
+
 tasks.register("prepareKotlinBuildScriptModel"){
 }
