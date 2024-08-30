@@ -6,7 +6,7 @@ include("catwork-datasource")
 include("catwork-logging")
 
 
-val springBootVersion = "3.3.2"
+val springBootVersion = "3.3.3"
 
 dependencyResolutionManagement {
     versionCatalogs {
