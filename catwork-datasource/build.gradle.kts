@@ -24,6 +24,7 @@ publishing {
 
 dependencies {
     implementation(libs.spring.jpa)
+    implementation(libs.spring.mybatis)
 }
 
 tasks.register("prepareKotlinBuildScriptModel"){
