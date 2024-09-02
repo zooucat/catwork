@@ -12,6 +12,7 @@ dependencyResolutionManagement {
     versionCatalogs {
         create("libs") {
             library("spring-logging", "org.springframework.boot:spring-boot-starter-logging:${springBootVersion}")
+            library("spring-log4j2", "org.springframework.boot:spring-boot-starter-log4j2:${springBootVersion}")
             library("spring-jpa", "org.springframework.boot:spring-boot-starter-jpa:${springBootVersion}")
             library("spring-mybatis", "org.mybatis.spring.boot:mybatis-spring-boot-starter:${springBootVersion}")
             library("spring-autoconfiguration", "org.springframework.boot:spring-boot-autoconfigure:${springBootVersion}")
